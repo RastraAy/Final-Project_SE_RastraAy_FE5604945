@@ -1,0 +1,24 @@
+SHOPPING CART sederhana (menambahkan barang ke shopping cart dan calculate jumlah barang)
+#Rastra Dequelhart Adichandra Ay FE5604945
+
+START
+
+DISPLAY "DAFTAR BARANG"
+
+READ AND INPUT "pilih_barang" WITH String
+READ AND WRITE "jumlah_barang" WITH Number
+READ AND WRITE "cart" with array
+
+FUNCTION add_to_cart(nama_barang)
+    IF nama_barang IN cart
+        PRINT "nama_barang" + "Sudah ada di dalam cart"
+    ELSE
+        CALCULTE "jumlah_barang" + 1
+        PRINT "Barang berhasil di tambahkan ke dalam cart"
+
+IF "Konfirmasi" is True
+    DISPLAY "Jumlah Barang saat ini di Cart adalah" + "jumlah_barang"
+ELSE
+    BACK TO STEP 8
+
+END
